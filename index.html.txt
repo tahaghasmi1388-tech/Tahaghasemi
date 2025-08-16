@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رزومه طاها قاسمی | Taha Ghasemi CV</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #2c3e50; color: #fff; padding: 20px; text-align: center; }
+    nav { text-align: center; margin: 15px; }
+    nav button { margin: 0 5px; padding: 8px 12px; border: none; border-radius: 6px; cursor: pointer; }
+    section { max-width: 900px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; }
+    ul { line-height: 1.8; }
+    footer { text-align: center; margin-top: 20px; padding: 10px; background: #2c3e50; color: #fff; }
+    a { color: #2980b9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="name-fa">طاها قاسمی</h1>
+    <h1 id="name-en" style="display:none">Taha Ghasemi</h1>
+    <p id="intro-fa">دانش‌آموز و پژوهشگر از اصفهان، علاقه‌مند به داروسازی و داروشناسی</p>
+    <p id="intro-en" style="display:none">Student and researcher from Isfahan, Iran, with strong interests in pharmaceutical sciences and pharmacology.</p>
+  </header>
+
+  <nav>
+    <button onclick="setLang('fa')">فارسی</button>
+    <button onclick="setLang('en')">English</button>
+  </nav>
+
+  <section>
+    <h2 id="about-fa">درباره من</h2>
+    <h2 id="about-en" style="display:none">About Me</h2>
+    <p id="bio-fa">عضو انجمن مخترعین ایران و IFIA. پژوهشگر فعال از ۱۴۰۲.</p>
+    <p id="bio-en" style="display:none">Member of Iran Inventors Association and IFIA. Active researcher since 2022.</p>
+  </section>
+
+  <section>
+    <h2 id="interests-fa">علاقه‌مندی‌ها</h2>
+    <h2 id="interests-en" style="display:none">Interests</h2>
+    <ul id="fa-interests">
+      <li>داروسازی</li>
+      <li>داروشناسی</li>
+      <li>شیمی</li>
+      <li>بسکتبال</li>
+    </ul>
+    <ul id="en-interests" style="display:none">
+      <li>Pharmaceutical sciences</li>
+      <li>Pharmacology</li>
+      <li>Chemistry</li>
+      <li>Basketball</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="pubs-fa">مقالات کنفرانسی</h2>
+    <h2 id="pubs-en" style="display:none">Conference Papers</h2>
+    <ul>
+      <li>سنتز نانوکاتالیست‌های هسته مغناطیسی پوشش داده‌شده با سیلیکا – ۱۴۰۲</li>
+      <li>تضمین سلامت کودکان با مصرف آبی سالم‌تر – ۱۴۰۳</li>
+      <li>... (بقیه مقالات)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="notes-fa">یادداشت‌های علمی</h2>
+    <h2 id="notes-en" style="display:none">Scientific Notes</h2>
+    <ul>
+      <li>کاربرد لیپوزوم‌های هوشمند در شیمی درمانی هدفمند سرطان – ۱۴۰۴</li>
+      <li>کاربرد نانولیپوزوم‌های هدفمند در افزایش اثربخشی داروی رالتی‌ترکسید – ۱۴۰۴</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="awards-fa">جوایز و افتخارات</h2>
+    <h2 id="awards-en" style="display:none">Awards & Honors</h2>
+    <ul>
+      <li>شایسته تقدیر جشنواره فرهیختگان جوان – ۱۴۰۴</li>
+      <li>مدرک تکنسین داروخانه – ۱۴۰۳</li>
+      <li>رتبه اول مسابقات پژوهش‌سرا – ۱۴۰۳</li>
+      <li>قبولی در مرحله اول المپیاد نانو – ۱۴۰۳</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="contact-fa">اطلاعات تماس</h2>
+    <h2 id="contact-en" style="display:none">Contact</h2>
+    <p>Email: ghasmitaha1388@gmail.com</p>
+    <p id="location-fa">اصفهان، ایران</p>
+    <p id="location-en" style="display:none">Isfahan, Iran</p>
+    <p>
+      <a href="https://www.linkedin.com/in/taha-ghasemi-54821a358" target="_blank">LinkedIn</a> | 
+      <a href="https://www.instagram.com/ghasemitaha313" target="_blank">Instagram</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 طاها قاسمی | Taha Ghasemi</p>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      const faItems = document.querySelectorAll('[id$="-fa"], #fa-interests');
+      const enItems = document.querySelectorAll('[id$="-en"], #en-interests');
+
+      if (lang === 'fa') {
+        faItems.forEach(el => el.style.display = '');
+        enItems.forEach(el => el.style.display = 'none');
+        document.body.dir = 'rtl';
+      } else {
+        faItems.forEach(el => el.style.display = 'none');
+        enItems.forEach(el => el.style.display = '';
+        document.body.dir = 'ltr';
+      }
+    }
+  </script>
+</body>
+</html>
